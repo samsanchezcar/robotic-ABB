@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Metadata Version="1">
+  <Id>665f4c007a864d25866394c1d2646c22</Id>
+  <Name>Recording-2</Name>
+  <EventCount>1</EventCount>
+  <StartedUtc>2025-09-24T20:21:47.2026656Z</StartedUtc>
+  <EndedUtc>2025-09-24T20:22:18.6297469Z</EndedUtc>
+  <TotalTime>0</TotalTime>
+  <Signals />
+  <Sources>
+    <Source type="Station" id="{ae0d3122-90e5-4b84-ada6-0872636d8903}" displayName="robotic-ABB-Cake" />
+  </Sources>
+</Metadata>

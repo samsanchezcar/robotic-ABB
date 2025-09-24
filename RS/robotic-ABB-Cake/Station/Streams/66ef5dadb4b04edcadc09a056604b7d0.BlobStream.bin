@@ -1,0 +1,1 @@
+<SmartComponent description="Conveyor"><IOSignal name="conveyor" group="" description="" caption="" /><IOSignal name="Comenzar" group="" description="" caption="" /><IOSignal name="Mover" group="" description="" caption="Comenzar" /></SmartComponent>

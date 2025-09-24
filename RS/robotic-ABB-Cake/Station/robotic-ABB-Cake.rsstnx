@@ -21,6 +21,7 @@
         <ObjectRef ID="3366" />
         <ObjectRef ID="4023" />
         <ObjectRef ID="4024" />
+        <ObjectRef ID="4628" />
       </Tags>
       <UserData Value="" />
     </Station>
@@ -33,6 +34,12 @@
     <SimulationConfiguration ID="3" Name="" Parent="2" VirtualTimeMode="1" DataRecordingEnabled="true">
       <SimulatedObjects>
         <ObjectRef ID="1261" />
+        <ObjectRef ID="4479" />
+        <ObjectRef ID="4484" />
+        <ObjectRef ID="4485" />
+        <ObjectRef ID="4486" />
+        <ObjectRef ID="4497" />
+        <ObjectRef ID="4498" />
       </SimulatedObjects>
       <EventTable ID="4" />
       <ConnectedState Value="" />
@@ -4108,6 +4115,9 @@
         <ObjectRef ID="2357" />
         <ObjectRef ID="2362" />
         <ObjectRef ID="2364" />
+        <ObjectRef ID="4477" />
+        <ObjectRef ID="4483" />
+        <ObjectRef ID="4494" />
       </Instances>
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -4127,6 +4137,11 @@
         <ObjectRef ID="2356" />
         <ObjectRef ID="2361" />
         <ObjectRef ID="2363" />
+        <ObjectRef ID="4475" />
+        <ObjectRef ID="4482" />
+        <ObjectRef ID="4490" />
+        <ObjectRef ID="4491" />
+        <ObjectRef ID="4493" />
       </Definitions>
       <Textures />
     </AssemblyRoot>
@@ -4142,7 +4157,7 @@
     </TaskSimulationConfiguration>
     <IRC5Controller ID="1261" Name="" Parent="9" StopAtBreakpoints="true">
       <UniqueId Value="{01434e54-0e55-47ce-b61a-89a002f5ecfc}" />
-      <SystemIdentity Value="{3BAF26D4-4AA6-4884-AA17-00BBDAC1B24B}" />
+      <SystemIdentity Value="{0C8EB14A-9B7F-43AD-9DBF-85FE2E54F7FA}" />
       <RAPIDData ID="1262" />
       <MechanicalUnits>
         <ObjectRef ID="2338" />
@@ -4449,7 +4464,7 @@
       </DefinedMoveInstructionGroups>
       <ActiveWObj ID="2349" />
       <ActiveTool ID="2347" />
-      <ActivePath ID="4402" />
+      <ActivePath ID="2365" />
       <ActiveProcess ID="2041" />
       <Frame>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -7929,12 +7944,12 @@
       <ComponentType Value="Mechanism" />
       <ClipPlane ID="-1" />
       <JointValues>
-        <Double Value="-1.39125859737396" />
-        <Double Value="0.0647068247199059" />
-        <Double Value="-0.0261524971574545" />
-        <Double Value="-0.319928258657455" />
-        <Double Value="0.514082193374634" />
-        <Double Value="0.371358513832092" />
+        <Double Value="-1.30049419403076" />
+        <Double Value="0.344178378582001" />
+        <Double Value="-0.293399840593338" />
+        <Double Value="-1.03012323379517" />
+        <Double Value="1.21856141090393" />
+        <Double Value="1.42046046257019" />
       </JointValues>
       <CalibFrames />
       <CalibFrameKnownValid />
@@ -7977,8 +7992,8 @@
     <MechanismLinkInstance ID="2341" Name="Link1" Parent="2339" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="14" DocID="1" />
       <Transform>
-        <RowX X="0.178574752319669" Y="-0.983926347768962" Z="0" W="0" />
-        <RowY X="0.983926347768962" Y="0.178574752319669" Z="0" W="0" />
+        <RowX X="0.178574752319666" Y="-0.983926347768963" Z="0" W="0" />
+        <RowY X="0.983926347768963" Y="0.178574752319666" Z="0" W="0" />
         <RowZ X="0" Y="0" Z="1" W="0" />
         <RowT X="0" Y="0" Z="0" W="1" />
       </Transform>
@@ -8006,10 +8021,10 @@
     <MechanismLinkInstance ID="2342" Name="Link2" Parent="2339" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="15" DocID="1" />
       <Transform>
-        <RowX X="0.178201038892994" Y="-0.981867229767994" Z="-0.064661679882164" W="0" />
-        <RowY X="0.983926347768962" Y="0.178574752319669" Z="0" W="0" />
-        <RowZ X="0.0115469434695346" Y="-0.0636223305270628" Z="0.997907243763075" W="0" />
-        <RowT X="-0.00403836416140895" Y="0.0222509220854583" Z="0.00526296778714919" W="1" />
+        <RowX X="0.178201038892992" Y="-0.981867229767994" Z="-0.064661679882164" W="0" />
+        <RowY X="0.983926347768963" Y="0.178574752319666" Z="0" W="0" />
+        <RowZ X="0.0115469434695344" Y="-0.0636223305270628" Z="0.997907243763075" W="0" />
+        <RowT X="-0.0040383641614089" Y="0.0222509220854583" Z="0.00526296778714919" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -8035,10 +8050,10 @@
     <MechanismLinkInstance ID="2343" Name="Link3" Parent="2339" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="16" DocID="1" />
       <Transform>
-        <RowX X="0.178442048773049" Y="-0.98319516648905" Z="-0.0385447768477809" W="0" />
-        <RowY X="0.983926347768962" Y="0.178574752319669" Z="0" W="0" />
-        <RowZ X="0.00688312397881282" Y="-0.0379252215094061" Z="0.99925687397073" W="0" />
-        <RowT X="-0.000734595375618902" Y="0.00404753603536061" Z="0.00247384786689198" W="1" />
+        <RowX X="0.178442048773047" Y="-0.983195166489051" Z="-0.0385447768477809" W="0" />
+        <RowY X="0.983926347768963" Y="0.178574752319666" Z="0" W="0" />
+        <RowZ X="0.00688312397881273" Y="-0.0379252215094061" Z="0.99925687397073" W="0" />
+        <RowT X="-0.000734595375618895" Y="0.00404753603536059" Z="0.00247384786689198" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -8064,10 +8079,10 @@
     <MechanismLinkInstance ID="2344" Name="Link4" Parent="2339" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="17" DocID="1" />
       <Transform>
-        <RowX X="0.178442048773046" Y="-0.983195166489051" Z="-0.0385447768477809" W="0" />
-        <RowY X="0.931835208475709" Y="0.181440932988067" Z="-0.314264748391307" W="0" />
-        <RowZ X="0.315977181889309" Y="0.020160665390489" Z="0.948552564751318" W="0" />
-        <RowT X="-0.220809564607892" Y="-0.0373096154373646" Z="0.0385753160311131" W="1" />
+        <RowX X="0.178442048773044" Y="-0.983195166489051" Z="-0.0385447768477809" W="0" />
+        <RowY X="0.931835208475709" Y="0.181440932988064" Z="-0.314264748391307" W="0" />
+        <RowZ X="0.315977181889309" Y="0.0201606653904883" Z="0.948552564751318" W="0" />
+        <RowT X="-0.220809564607892" Y="-0.0373096154373641" Z="0.0385753160311133" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -8093,10 +8108,10 @@
     <MechanismLinkInstance ID="2345" Name="Link5" Parent="2339" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="18" DocID="1" />
       <Transform>
-        <RowX X="9.80204973854981E-08" Y="-0.866025415193917" Z="-0.499999980238194" W="0" />
-        <RowY X="0.931835208475709" Y="0.18144093298807" Z="-0.314264748391307" W="0" />
-        <RowZ X="0.362881722114828" Y="-0.465917555018721" Z="0.806992991097416" W="0" />
-        <RowT X="-0.173906719409815" Y="0.256051689411182" Z="0.347020573998377" W="1" />
+        <RowX X="9.80204953038299E-08" Y="-0.866025415193917" Z="-0.499999980238194" W="0" />
+        <RowY X="0.931835208475709" Y="0.181440932988068" Z="-0.314264748391307" W="0" />
+        <RowZ X="0.362881722114827" Y="-0.465917555018721" Z="0.806992991097416" W="0" />
+        <RowT X="-0.173906719409814" Y="0.256051689411183" Z="0.347020573998377" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -8122,10 +8137,10 @@
     <MechanismLinkInstance ID="2346" Name="Link6" Parent="2339" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="19" DocID="1" />
       <Transform>
-        <RowX X="9.8020494132011E-08" Y="-0.866025415193917" Z="-0.499999980238193" W="0" />
-        <RowY X="0.999999999999994" Y="1.08838729362404E-07" Z="7.52677714599415E-09" W="0" />
-        <RowZ X="4.79009822917931E-08" Y="-0.499999980238191" Z="0.866025415193923" W="0" />
-        <RowT X="0.084465032630445" Y="0.280318376167445" Z="0.304989488041664" W="1" />
+        <RowX X="9.80204920503428E-08" Y="-0.866025415193918" Z="-0.499999980238192" W="0" />
+        <RowY X="0.999999999999994" Y="1.08838726947669E-07" Z="7.52677703497184E-09" W="0" />
+        <RowZ X="4.79009811260589E-08" Y="-0.49999998023819" Z="0.866025415193923" W="0" />
+        <RowT X="0.0844650326304457" Y="0.280318376167445" Z="0.304989488041663" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -8279,10 +8294,10 @@
         <ObjectRef ID="2358" />
       </ChildInstances>
       <Transform>
-        <RowX X="-4.79009822917931E-08" Y="0.49999998023819" Z="-0.866025415193923" W="0" />
-        <RowY X="0.999999999999994" Y="1.08838729327475E-07" Z="7.5267770514966E-09" W="0" />
-        <RowZ X="9.8020494132011E-08" Y="-0.866025415193918" Z="-0.499999980238193" W="0" />
-        <RowT X="0.0844651172164988" Y="-0.521684698587014" Z="0.664099593837067" W="1" />
+        <RowX X="-4.79009811260589E-08" Y="0.49999998023819" Z="-0.866025415193923" W="0" />
+        <RowY X="0.999999999999994" Y="1.0883872694183E-07" Z="7.5267770202179E-09" W="0" />
+        <RowZ X="9.80204920503428E-08" Y="-0.866025415193918" Z="-0.499999980238192" W="0" />
+        <RowT X="0.0844651172164976" Y="-0.521684698587014" Z="0.664099593837068" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14800,8 +14815,1738 @@
       </ReferenceFrame>
       <Color Red="0" Green="0" Blue="0" Alpha="0" />
     </Target>
+    <SmartComponentDef ID="4475" Name="" Parent="1258" PerInstanceCodeBehind="false">
+      <Assets>
+        <ObjectRef ID="4476" />
+      </Assets>
+      <CodeBehindLocation Value="" />
+    </SmartComponentDef>
+    <Asset ID="4476" Name="Resources.en.xml" Parent="4475" AllowSave="true">
+      <Blob StreamType="BlobStream" StreamID="70ff89694471413c85a99ae8e4e679d3" StreamChangeRef="ca173c65263b400d8116d1e3e4e43b0d" />
+      <OriginalSource Value="" />
+    </Asset>
+    <SmartComponentInstance ID="4477" Name="SmartComponent_1" Parent="1258" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+      <UniqueId Value="{585b258f-3649-4957-93a4-13ae7d443821}" />
+      <Definition ID="4475" />
+      <ChildInstances>
+        <ObjectRef ID="4478" />
+        <ObjectRef ID="4479" />
+        <ObjectRef ID="4481" />
+        <ObjectRef ID="4484" />
+        <ObjectRef ID="4485" />
+        <ObjectRef ID="4486" />
+        <ObjectRef ID="4488" />
+        <ObjectRef ID="4489" />
+      </ChildInstances>
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Bindings>
+        <Element type="TPropertyBinding" AllowCycle="false">
+          <SourceObject ID="4478" />
+          <SourceProperty Value="Copy" />
+          <TargetObject ID="4481" />
+          <TargetProperty Value="Back" />
+          <SourceObjectName Value="Source" />
+          <TargetObjectName Value="Queue" />
+        </Element>
+      </Bindings>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Comenzar" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Comenzar">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <IOConnections>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4477" />
+          <SourceSignal Value="Comenzar" />
+          <TargetObject ID="4478" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="SmartComponent_1" />
+          <TargetObjectName Value="Source" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4478" />
+          <SourceSignal Value="Executed" />
+          <TargetObject ID="4481" />
+          <TargetSignal Value="Enqueue" />
+          <SourceObjectName Value="Source" />
+          <TargetObjectName Value="Queue" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4477" />
+          <SourceSignal Value="Comenzar" />
+          <TargetObject ID="4479" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="SmartComponent_1" />
+          <TargetObjectName Value="LinearMover2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4484" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="Timer" />
+          <TargetObjectName Value="LinearMover2_2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4486" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="4481" />
+          <TargetSignal Value="Dequeue" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="Queue" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4486" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="4484" />
+          <TargetSignal Value="Reset" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="Timer" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4479" />
+          <SourceSignal Value="Executing" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="InputA" />
+          <SourceObjectName Value="LinearMover2" />
+          <TargetObjectName Value="LogicGate" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="-1" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="4484" />
+          <TargetSignal Value="Active" />
+          <SourceObjectName Value="LogicGate" />
+          <TargetObjectName Value="Timer" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4479" />
+          <SourceSignal Value="Executed" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Increase" />
+          <SourceObjectName Value="LinearMover2" />
+          <TargetObjectName Value="Counter" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4479" />
+          <SourceSignal Value="Executed" />
+          <TargetObject ID="4488" />
+          <TargetSignal Value="Set" />
+          <SourceObjectName Value="LinearMover2" />
+          <TargetObjectName Value="LogicSRLatch" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4488" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="4484" />
+          <TargetSignal Value="Active" />
+          <SourceObjectName Value="LogicSRLatch" />
+          <TargetObjectName Value="Timer" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4486" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="4488" />
+          <TargetSignal Value="Reset" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="LogicSRLatch" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4484" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="4489" />
+          <TargetSignal Value="Set" />
+          <SourceObjectName Value="Timer" />
+          <TargetObjectName Value="LogicSRLatch_2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4489" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="4485" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="LogicSRLatch_2" />
+          <TargetObjectName Value="LinearMover" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4486" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="4489" />
+          <TargetSignal Value="Reset" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="LogicSRLatch_2" />
+        </Element>
+      </IOConnections>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="4478" Name="Source" Parent="4477" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Source">
+          <Value>
+            <ObjectRef ID="4483" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Copy">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Parent">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Position">
+          <Value>
+            <String Value="[-0.52 -0.67 0.46]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Orientation">
+          <Value>
+            <String Value="[0 0 0]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Transient">
+          <Value>
+            <Bool Value="false" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;PhysicsBehavior">
+          <Value>
+            <Integer Value="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="23.2" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="21.6" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{5a456960-5243-4401-b86c-b85bdd1bd9c3}" />
+      <Definition ID="4" DocID="2" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Source" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.GraphicComponent" />
+          <Attributes Value="CustomValidation=true" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="Copy" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.GraphicComponent" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Parent" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.IHasGraphicComponents" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Position" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Orientation" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Angle" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Transient" />
+          <Type Value="System.Boolean" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="PhysicsBehavior" />
+          <Type Value="System.Int32" />
+          <Attributes Value="AllowedValues=-1;0;1;2;3|DisplayValues=Unchanged;None;Static;Kinematic;Dynamic" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Execute" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Executed" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Execute">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Executed">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="4479" Name="LinearMover2" Parent="4477" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Object">
+          <Value>
+            <ObjectRef ID="4481" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Direction">
+          <Value>
+            <String Value="[1 0 0]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Distance">
+          <Value>
+            <Double Value="0.52" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Duration">
+          <Value>
+            <Double Value="10" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Reference">
+          <Value>
+            <String Value="Global" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ReferenceObject">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="228.236257309942" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="10" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{708b457f-9ed1-45c8-8c3d-5cc8ee3ce071}" />
+      <Definition ID="4" DocID="3" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Object" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.IHasTransform" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Direction" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|VectorUsage=Length|CustomValidation=true" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Distance" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Length|MinValue=0" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Duration" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Time|MinValue=0" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Reference" />
+          <Type Value="System.String" />
+          <Attributes Value="AllowedValues=Global;Local;Object|AutoApply=true" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="false">
+          <Id Value="ReferenceObject" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.IHasTransform" />
+          <Attributes Value="" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Execute" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Executed" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Executing" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Execute">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Executed">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Executing">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="4481" Name="Queue" Parent="4477" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Back">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Front">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
+          <Value>
+            <String Value="{028ec658-b205-4895-a132-ff640fb30e13};{3d79bc29-2927-4f3b-bdd5-6fd162bd8156};{3cf4920a-4acb-42c1-9e8d-eb58cc992b0b};{25fbd3c0-7316-4d79-b5b6-dd6003fe3828};{0ccfc403-11bb-44ec-9944-c7921fabdc8e};{674790f1-0fcf-4110-a3c1-a505c1d138d4};{c0f30082-63db-4821-a51f-c2fea32bad35};{d9349979-5bd2-4c3f-8f07-7e36989c4e0a};{c0a8cc23-b72f-4c64-8637-49588cc84367};{2ffe789e-9378-4604-8916-6efb66d4e005};{949f34ea-52f3-4b05-a1a7-7d71719ed651};{b449f78f-04af-4077-8cdb-1e3119cf339d};{17634bd8-e37c-4f67-aa28-c6780795e336}" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="234.4" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="226.907602339181" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{403f9871-adb7-4bf3-82d7-4f0f5dae5c32}" />
+      <Definition ID="4" DocID="5" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Back" />
+          <Type Value="ABB.Robotics.RobotStudio.ProjectObject" />
+          <Attributes Value="AutoApply=true" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="Front" />
+          <Type Value="ABB.Robotics.RobotStudio.ProjectObject" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="false">
+          <Id Value="Queue" />
+          <Type Value="System.String" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="NumberOfObjects" />
+          <Type Value="System.Int32" />
+          <Attributes Value="" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Enqueue" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Dequeue" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Clear" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Delete" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="DeleteAll" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Enqueue">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Dequeue">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Clear">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Delete">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="DeleteAll">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <PartDef ID="4482" Name="" Parent="1258">
+      <GeoPart StreamType="GeoDataStream" StreamID="4b2ad67d0f6b4d888b1289090603f8da" StreamChangeRef="8e4e160a530f4f9989df9bbcb6fd4291" />
+      <GfxData StreamType="GfxDataStream" StreamID="605899d55b3c4e45bd21fa63fc9f5b6b" StreamChangeRef="6e186f3eab2e4663b4fca63bc60e883f" />
+      <BoundingBox>
+        <Min X="0" Y="0" Z="0" />
+        <Max X="0.23" Y="0.165" Z="0.083" />
+      </BoundingBox>
+    </PartDef>
+    <ComponentInstance ID="4483" Name="Box" Parent="1258" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <Definition ID="4482" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="-0.52" Y="-0.67" Z="0.46" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
+    <SmartComponentInstance ID="4484" Name="Timer" Parent="4477" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;StartTime">
+          <Value>
+            <Double Value="0" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Interval">
+          <Value>
+            <Double Value="5" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Repeat">
+          <Value>
+            <Bool Value="true" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;CurrentTime">
+          <Value>
+            <Double Value="0" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="632.863157894737" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="13.7005847953216" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{2c603fa9-345c-4534-a472-3419f276ea80}" />
+      <Definition ID="4" DocID="4" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="StartTime" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Time|MinValue=0" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Interval" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Time|MinValue=0" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Repeat" />
+          <Type Value="System.Boolean" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="CurrentTime" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Time" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Active" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Output" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Reset" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Active">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Output">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Reset">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="4485" Name="LinearMover" Parent="4477" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Object">
+          <Value>
+            <ObjectRef ID="4481" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Direction">
+          <Value>
+            <String Value="[1 0 0]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Speed">
+          <Value>
+            <Double Value="0.3" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Reference">
+          <Value>
+            <String Value="Global" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ReferenceObject">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="826" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="207.784795321637" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{3a5be155-2ba6-46fb-8a82-92d8e19fc30a}" />
+      <Definition ID="4" DocID="6" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Object" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.IHasTransform" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Direction" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|VectorUsage=Direction|CustomValidation=true" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Speed" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Velocity" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Reference" />
+          <Type Value="System.String" />
+          <Attributes Value="AllowedValues=Global;Local;Object|AutoApply=true" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="false">
+          <Id Value="ReferenceObject" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.IHasTransform" />
+          <Attributes Value="" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Execute" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Execute">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="4486" Name="LineSensor" Parent="4477" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Start">
+          <Value>
+            <String Value="[1 -0.69 0.5]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;End">
+          <Value>
+            <String Value="[1 -0.5 0.5]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Length">
+          <Value>
+            <Double Value="0.19" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Radius">
+          <Value>
+            <Double Value="0.0292817679558011" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Tag">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SenseMultiple">
+          <Value>
+            <Bool Value="false" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPart">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPoint">
+          <Value>
+            <String Value="[1 -0.584518127441406 0.5]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="10" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="238.884210526316" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{ebe91084-6cba-49c2-b754-08cd307fefd1}" />
+      <Definition ID="5" DocID="7" />
+      <ChildInstances>
+        <ObjectRef ID="4487" />
+      </ChildInstances>
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Start" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|Reference=Local|AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="End" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|Reference=Local|AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Length" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Length|MinValue=0|AutoApply=True|NoDefaultInitialization=True|CustomValidation=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Radius" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Length|MinValue=0|MaxValue=0.1|Slider=True|AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Tag" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.ProjectObjectTag" />
+          <Attributes Value="AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="SenseMultiple" />
+          <Type Value="System.Boolean" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="SensedPart" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.Part" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="SensedPoint" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Active" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="SensorOut" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="SensorOutPulse" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Active">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Element>
+        <Element Key="SensorOut">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="SensorOutPulse">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <ComponentInstance ID="4487" Name="_sensorPart_" Parent="4486" UIVisible="false" PickingEnabled="false" Detectable="false" PhysicsMotionControl="0">
+      <Definition ID="4490" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
+    <SmartComponentInstance ID="4488" Name="LogicSRLatch" Parent="4477" UIVisible="false" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+      <Attributes>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="447.59298245614" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="10.3438596491228" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{00b3c9ed-ae52-43bf-b69c-f65be567e72d}" />
+      <Definition ID="4" DocID="8" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Set" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Reset" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Output" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="InvOutput" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Set">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Reset">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Output">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="InvOutput">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="4489" Name="LogicSRLatch_2" Parent="4477" UIVisible="false" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+      <Attributes>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="822.8" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="31.2280701754386" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{32a2586e-e370-4bf0-a99b-99202f07ec8b}" />
+      <Definition ID="4" DocID="8" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Set" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Reset" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Output" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="InvOutput" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Set">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Reset">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Output">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="InvOutput">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <PartDef ID="4490" Name="" Parent="1258">
+      <GeoPart StreamID="-1" />
+      <GfxData StreamType="GfxDataStream" StreamID="66ff43b3264049f0bd66fa33d71819b4" StreamChangeRef="565498a50f294653a5dc945855d0f3c3" />
+      <BoundingBox>
+        <Min X="0.97071826171875" Y="-0.69" Z="0.470718231201172" />
+        <Max X="1.02928173828125" Y="-0.5" Z="0.52928173828125" />
+      </BoundingBox>
+    </PartDef>
+    <SmartComponentDef ID="4491" Name="" Parent="1258" PerInstanceCodeBehind="false">
+      <Assets>
+        <ObjectRef ID="4492" />
+      </Assets>
+      <CodeBehindLocation Value="" />
+    </SmartComponentDef>
+    <Asset ID="4492" Name="Resources.en.xml" Parent="4491" AllowSave="true">
+      <Blob StreamType="BlobStream" StreamID="66ef5dadb4b04edcadc09a056604b7d0" StreamChangeRef="f63201eddbeb4a43b1d47cd35f5163b5" />
+      <OriginalSource Value="" />
+    </Asset>
+    <PartDef ID="4493" Name="" Parent="1258">
+      <GeoPart StreamID="-1" />
+      <GfxData StreamType="GfxDataStream" StreamID="26f8ff096c024b199468873f1c398d3f" StreamChangeRef="418205c0587940ddae5f4be0a4685e20" />
+      <BoundingBox>
+        <Min X="0.97071826171875" Y="-0.69" Z="0.470718231201172" />
+        <Max X="1.02928173828125" Y="-0.5" Z="0.52928173828125" />
+      </BoundingBox>
+    </PartDef>
+    <SmartComponentInstance ID="4494" Name="SmartComponent_3" Parent="1258" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+      <UniqueId Value="{e407b0ab-0393-46a7-bdfd-46d2d4e1e843}" />
+      <Definition ID="4491" />
+      <ChildInstances>
+        <ObjectRef ID="4495" />
+        <ObjectRef ID="4496" />
+        <ObjectRef ID="4497" />
+        <ObjectRef ID="4498" />
+      </ChildInstances>
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Bindings>
+        <Element type="TPropertyBinding" AllowCycle="false">
+          <SourceObject ID="4495" />
+          <SourceProperty Value="Copy" />
+          <TargetObject ID="4496" />
+          <TargetProperty Value="Back" />
+          <SourceObjectName Value="Source" />
+          <TargetObjectName Value="Queue" />
+        </Element>
+      </Bindings>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Mover" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Mover">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <IOConnections>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4495" />
+          <SourceSignal Value="Executed" />
+          <TargetObject ID="4496" />
+          <TargetSignal Value="Enqueue" />
+          <SourceObjectName Value="Source" />
+          <TargetObjectName Value="Queue" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="-1" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="Timer" />
+          <TargetObjectName Value="LinearMover2_2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4498" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Reset" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="Timer" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="-1" />
+          <SourceSignal Value="Executing" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="InputA" />
+          <SourceObjectName Value="LinearMover2" />
+          <TargetObjectName Value="LogicGate" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="-1" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Active" />
+          <SourceObjectName Value="LogicGate" />
+          <TargetObjectName Value="Timer" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="-1" />
+          <SourceSignal Value="Executed" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Increase" />
+          <SourceObjectName Value="LinearMover2" />
+          <TargetObjectName Value="Counter" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="-1" />
+          <SourceSignal Value="Executed" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Set" />
+          <SourceObjectName Value="LinearMover2" />
+          <TargetObjectName Value="LogicSRLatch" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="-1" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Active" />
+          <SourceObjectName Value="LogicSRLatch" />
+          <TargetObjectName Value="Timer" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4498" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Reset" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="LogicSRLatch" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="-1" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Set" />
+          <SourceObjectName Value="Timer" />
+          <TargetObjectName Value="LogicSRLatch_2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="-1" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="4497" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="LogicSRLatch_2" />
+          <TargetObjectName Value="LinearMover" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4498" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Reset" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="LogicSRLatch_2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4494" />
+          <SourceSignal Value="Mover" />
+          <TargetObject ID="4495" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="SmartComponent_3" />
+          <TargetObjectName Value="Source" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4494" />
+          <SourceSignal Value="Mover" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="SmartComponent_3" />
+          <TargetObjectName Value="LinearMover2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4494" />
+          <SourceSignal Value="Mover" />
+          <TargetObject ID="4497" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="SmartComponent_3" />
+          <TargetObjectName Value="LinearMover" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4498" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="4496" />
+          <TargetSignal Value="Delete" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="Queue" />
+        </Element>
+      </IOConnections>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="4495" Name="Source" Parent="4494" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Source">
+          <Value>
+            <ObjectRef ID="4483" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Copy">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Parent">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Position">
+          <Value>
+            <String Value="[-0.52 -0.67 0.46]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Orientation">
+          <Value>
+            <String Value="[0 0 0]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Transient">
+          <Value>
+            <Bool Value="false" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;PhysicsBehavior">
+          <Value>
+            <Integer Value="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="23.2" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="21.6" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{3650a9c4-4fcd-4955-82c6-12651df65abd}" />
+      <Definition ID="4" DocID="2" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Source" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.GraphicComponent" />
+          <Attributes Value="CustomValidation=true" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="Copy" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.GraphicComponent" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Parent" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.IHasGraphicComponents" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Position" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Orientation" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Angle" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Transient" />
+          <Type Value="System.Boolean" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="PhysicsBehavior" />
+          <Type Value="System.Int32" />
+          <Attributes Value="AllowedValues=-1;0;1;2;3|DisplayValues=Unchanged;None;Static;Kinematic;Dynamic" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Execute" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Executed" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Execute">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Executed">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="4496" Name="Queue" Parent="4494" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Back">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Front">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
+          <Value>
+            <String Value="{028ec658-b205-4895-a132-ff640fb30e13};{3d79bc29-2927-4f3b-bdd5-6fd162bd8156};{3cf4920a-4acb-42c1-9e8d-eb58cc992b0b};{25fbd3c0-7316-4d79-b5b6-dd6003fe3828};{0ccfc403-11bb-44ec-9944-c7921fabdc8e};{674790f1-0fcf-4110-a3c1-a505c1d138d4};{c0f30082-63db-4821-a51f-c2fea32bad35};{d9349979-5bd2-4c3f-8f07-7e36989c4e0a};{c0a8cc23-b72f-4c64-8637-49588cc84367};{2ffe789e-9378-4604-8916-6efb66d4e005};{949f34ea-52f3-4b05-a1a7-7d71719ed651};{b449f78f-04af-4077-8cdb-1e3119cf339d};{17634bd8-e37c-4f67-aa28-c6780795e336}" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="312.8" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="260.507602339181" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{8bb44a51-e0bf-4c16-bd19-3aa8f7e0a32c}" />
+      <Definition ID="4" DocID="5" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Back" />
+          <Type Value="ABB.Robotics.RobotStudio.ProjectObject" />
+          <Attributes Value="AutoApply=true" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="Front" />
+          <Type Value="ABB.Robotics.RobotStudio.ProjectObject" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="false">
+          <Id Value="Queue" />
+          <Type Value="System.String" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="NumberOfObjects" />
+          <Type Value="System.Int32" />
+          <Attributes Value="" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Enqueue" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Dequeue" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Clear" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Delete" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="DeleteAll" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Enqueue">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Dequeue">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Clear">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Delete">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="DeleteAll">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="4497" Name="LinearMover" Parent="4494" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Object">
+          <Value>
+            <ObjectRef ID="4496" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Direction">
+          <Value>
+            <String Value="[1 0 0]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Speed">
+          <Value>
+            <Double Value="0.1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Reference">
+          <Value>
+            <String Value="Global" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ReferenceObject">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="331.6" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="63.7847953216373" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{cda16093-777d-4fd6-be9f-66f0062aab48}" />
+      <Definition ID="4" DocID="6" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Object" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.IHasTransform" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Direction" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|VectorUsage=Direction|CustomValidation=true" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Speed" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Velocity" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Reference" />
+          <Type Value="System.String" />
+          <Attributes Value="AllowedValues=Global;Local;Object|AutoApply=true" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="false">
+          <Id Value="ReferenceObject" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.IHasTransform" />
+          <Attributes Value="" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Execute" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Execute">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="4498" Name="LineSensor" Parent="4494" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Start">
+          <Value>
+            <String Value="[1 -0.69 0.5]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;End">
+          <Value>
+            <String Value="[1 -0.5 0.5]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Length">
+          <Value>
+            <Double Value="0.19" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Radius">
+          <Value>
+            <Double Value="0.0292817679558011" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Tag">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SenseMultiple">
+          <Value>
+            <Bool Value="false" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPart">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPoint">
+          <Value>
+            <String Value="[1 -0.584518127441406 0.5]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="10" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="238.884210526316" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{742b024e-1cf1-422b-8b37-bb570c719982}" />
+      <Definition ID="5" DocID="7" />
+      <ChildInstances>
+        <ObjectRef ID="4499" />
+      </ChildInstances>
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Start" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|Reference=Local|AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="End" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|Reference=Local|AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Length" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Length|MinValue=0|AutoApply=True|NoDefaultInitialization=True|CustomValidation=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Radius" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Length|MinValue=0|MaxValue=0.1|Slider=True|AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Tag" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.ProjectObjectTag" />
+          <Attributes Value="AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="SenseMultiple" />
+          <Type Value="System.Boolean" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="SensedPart" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.Part" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="SensedPoint" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Active" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="SensorOut" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="SensorOutPulse" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Active">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Element>
+        <Element Key="SensorOut">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="SensorOutPulse">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <ComponentInstance ID="4499" Name="_sensorPart_" Parent="4498" UIVisible="false" PickingEnabled="false" Detectable="false" PhysicsMotionControl="0">
+      <Definition ID="4493" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
+    <ProjectObjectTag ID="4628" Name="Tag_1" Parent="1" Visible="true" />
   </Objects>
   <ReferencedDocuments>
-    <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB140%\IRB140_6_81_C_G_03.rslib" RelativeLocation="..\..\..\..\..\..\..\ProgramData\ABB\DistributionPackages2\ABB.RobotStudio.Models.IRB140-1.1\RobotStudio\LibraryComponents\IRB140_6_81_C_G_03.rslib" GUID="{FC921CAD-BF7C-4760-9332-E09FBB2B2964}" />
+    <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB140%\IRB140_6_81_C_G_03.rslib" RelativeLocation="..\..\..\..\..\..\ProgramData\ABB\DistributionPackages2\ABB.RobotStudio.Models.IRB140-1.1\RobotStudio\LibraryComponents\IRB140_6_81_C_G_03.rslib" GUID="{FC921CAD-BF7C-4760-9332-E09FBB2B2964}" />
+    <DocRef ID="2" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Source.rslib" RelativeLocation="D:\RobotStudio\ABB Library\Components\Source.rslib" GUID="{20E4DFF9-482F-48D8-B41B-9A9786C8671C}" />
+    <DocRef ID="3" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LinearMover2.rslib" RelativeLocation="D:\RobotStudio\ABB Library\Components\LinearMover2.rslib" GUID="{4C6EE023-2C56-4066-82B3-1D023FFF70BC}" />
+    <DocRef ID="5" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Queue.rslib" RelativeLocation="D:\RobotStudio\ABB Library\Components\Queue.rslib" GUID="{02566F92-B75E-4984-9087-7209B0C8CB9B}" />
+    <DocRef ID="4" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Timer.rslib" RelativeLocation="D:\RobotStudio\ABB Library\Components\Timer.rslib" GUID="{96FB0684-7E23-4FC7-8D7B-4829A71CF32A}" />
+    <DocRef ID="6" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LinearMover.rslib" RelativeLocation="D:\RobotStudio\ABB Library\Components\LinearMover.rslib" GUID="{9D584F55-57E0-48A4-BC2E-375F2D85AFBF}" />
+    <DocRef ID="7" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LineSensor.rslib" RelativeLocation="D:\RobotStudio\ABB Library\Components\LineSensor.rslib" GUID="{6F6EE5D7-3C6A-4434-BA14-64F9996673C7}" />
+    <DocRef ID="8" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LogicSRLatch.rslib" RelativeLocation="D:\RobotStudio\ABB Library\Components\LogicSRLatch.rslib" GUID="{C283AA2F-4FA1-48C9-B115-A0D28319A7A0}" />
   </ReferencedDocuments>
 </PIMDocument>
