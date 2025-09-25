@@ -135,7 +135,7 @@ MODULE Module1
         !MoveL current_pos, v100, z5, Marker\WObj:=Cake;
         
         ! 4. Ejecutar N1_S y subir 50mm
-        N1_S;P_Local_Home;
+        !N1_S;P_Local_Home;
         !current_pos := CRobT(\Tool:=Marker\WObj:=Cake);
         !current_pos.trans.z := current_pos.trans.z + 50;
         !MoveL current_pos, v100, z5, Marker\WObj:=Cake;
