@@ -25,6 +25,7 @@ MOC.cfg
 
 
 >>TASK1: (T_ROB1,,)
+PROGMOD\TCP_t2B7.mod @ 
 SYSMOD\user.sys @ 
 PROGMOD\Module1.mod @ 
 PROGMOD\CalibData.mod @ 
