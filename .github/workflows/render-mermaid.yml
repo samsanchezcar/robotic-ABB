@@ -13,8 +13,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -28,11 +26,14 @@ jobs:
         run: mkdir -p Diagrams
 
       - name: Generate SVGs from .mmd files
+        env:
+          PUPPETEER_EXECUTABLE_PATH: "chromium"
+          PUPPETEER_ARGS: "--no-sandbox"
         run: |
           for file in Diagrams/*.mmd; do
             filename=$(basename "$file" .mmd)
             echo "Generating SVG for $file..."
-            mmdc -i "$file" -o "Diagrams/$filename.svg" --no-sandbox
+            mmdc -i "$file" -o "Diagrams/$filename.svg"
           done
 
       - name: Commit and push generated SVGs
