@@ -1,0 +1,46 @@
+---
+config:
+  theme: redux-dark
+  look: classic
+title: RAPID Robot Cake Decoration Routine
+---
+flowchart TB
+  Start(["Start"]) ---> Init["Initialize outputs OFF"]
+  Init ---> Wait[/"Wait for user Input"/]
+  Wait ---> Decition{"¿Digital Input 1 ON?(DI_01==1)"}
+  Decition -- YES ---> Output1On["Set Digital Output 1"]
+  Output1On ---> PHome1["Go Home"]
+  PHome1 ---> ConvMove1["Set Conveyor Output(Conveyor_FWD)"]
+  ConvMove1 ---> Wait1["Wait 5.2 Seconds"]
+  Wait1 ---> ConvStop1["Reset Conyeyor Output(Conveyor_FWD)"]
+  ConvStop1 ---> PHome2["Go Home"]
+  PHome2 ---> LocalHome1
+  subgraph Draw["Decoration routine"]
+    LocalHome1["Go to local Home"]
+    DrawBat[["Execute Batman Path"]]
+    LocalHome2["Go to local Home"]
+    DrawNames[["Execute names Path"]]
+    LocalHome3["Go to local Home"]
+    PHomeFinal["Go Home"]
+  end
+  LocalHome1 ---> DrawBat
+  DrawBat ---> LocalHome2
+  LocalHome2 ---> DrawNames
+  DrawNames ---> LocalHome3
+  LocalHome3 ---> PHomeFinal
+  PHomeFinal ---> SafeWait["Wait 2 seconds"]
+  SafeWait ---> ConvMove2["Set Conveyor Output(Conveyor_FWD)"]
+  ConvMove2 ---> Wait2["Wait 3.5 Seconds"]
+  Wait2 ---> ConvStop2["Reset Conyeyor Output(Conveyor_FWD)"]
+  ConvStop2 ---> IndOff["Reset Digital Output 1"]
+  IndOff ---> PHomeEnd["Go Home"]
+  PHomeEnd ---> ConvInv["Set Inverse conveyor output (Conveyor_INV)"]
+  ConvInv ---> Wait3["Wait 5 seconds"]
+  Wait3 ---> ConvInvStop["Reset Inverse conveyor output (Conveyor_INV)"]
+  ConvInvStop ---> Wait
+  Decition -- NO ---> Decition2{"¿Digital Input 2 ON?(DI_02==1)"}
+  Decition2 -- YES ---> MoveHome["Go Home"]
+  Decition2 -- NO ---> Decition3{"¿Digital Input 3 ON?(DI_03==1)"}
+  Decition3 -- YES ---> MoveMaintenance["Go to maintenance position"]
+  MoveHome ---> Wait
+  MoveMaintenance ---> Wait
