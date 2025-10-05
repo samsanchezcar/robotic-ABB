@@ -24,9 +24,9 @@ La lógica de control principal se encuentra en el módulo RAPID `Module1`, que 
 ## 🔁 Diagrama de flujo de acciones del robot
 
 El diagrama de flujo completo del funcionamiento del robot está disponible en la carpeta [`Diagrams`](./Diagrams/), en formato `.mmd` (Mermaid), compatible para ser visualizado en GitHub con Markdown.
-# Diagrama de flujo
 
-![Flujo principal](Diagrams/Flowchart lab1_eng.svg)
+
+![Flujo principal](Diagrams/Flowchart_lab1_eng.svg)
 
 
 ---
