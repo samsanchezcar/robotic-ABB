@@ -1,0 +1,31 @@
+name: Render Mermaid Diagrams
+
+on:
+  push:
+    paths:
+      - '**/*.mmd'   # Se ejecuta cuando se cambie cualquier archivo .mmd
+  workflow_dispatch: # Permite ejecutarlo manualmente desde GitHub Actions
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Descargar el repositorio
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2️⃣ Generar las imágenes con Mermaid CLI
+      - name: Generate Mermaid diagrams
+        uses: mermaid-js/mermaid-cli-action@v3
+        with:
+          files: '**/*.mmd'  # Convierte todos los archivos .mmd en .svg
+
+      # 3️⃣ Subir los resultados al repo
+      - name: Commit and push rendered diagrams
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Render Mermaid diagrams [auto]" || echo "No changes to commit"
+          git push
