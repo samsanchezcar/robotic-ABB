@@ -33,7 +33,7 @@ El diagrama de flujo completo del funcionamiento del robot está disponible en l
 
 ## 🧭 Plano de planta
 
-El plano de planta con la ubicación del robot, conveyor, herramienta y sensores se encuentra en la carpeta [`Layouts`](./Layouts/).
+El plano de planta con la ubicación del robot, conveyor, herramienta y sensores se encuentra en la carpeta [`Diagrams`](./Diagrams/).
 
 ---
 
