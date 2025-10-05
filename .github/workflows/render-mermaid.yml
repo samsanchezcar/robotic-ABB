@@ -13,8 +13,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -22,18 +24,21 @@ jobs:
       - name: Install Mermaid CLI
         run: npm install -g @mermaid-js/mermaid-cli
 
+      - name: Create output directory
+        run: mkdir -p Diagrams
+
       - name: Generate SVGs from .mmd files
         run: |
           for file in Diagrams/*.mmd; do
             filename=$(basename "$file" .mmd)
-            mmdc -i "$file" -o "Diagrams/$filename.svg"
+            echo "Generating SVG for $file..."
+            mmdc -i "$file" -o "Diagrams/$filename.svg" --no-sandbox
           done
 
       - name: Commit and push generated SVGs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add Diagrams/*.svg
+          git add Diagrams/*.svg || echo "No SVGs found"
           git commit -m "Auto-generate Mermaid SVGs [skip ci]" || echo "No changes to commit"
-          git push
-
+          git push || echo "No push needed"
