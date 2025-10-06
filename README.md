@@ -161,6 +161,18 @@ Incluye planos en **PDF**, modelos en **Fusion 360 (`.f3d / .f3z`)**, exportacio
 
 ---
 
+
+## ✏️ Diseño de trayectorias
+
+![Trayectorias](Sources/Trayectory%20Design.png)
+
+Las trayectorias se diseñaron en **Fusion 360** combinando texto y geometrías vectorizadas.  
+- **Texto:** generado con la herramienta de *Sketch Text* y adaptado para extrusión.  
+- **Ícono Batman:** obtenido mediante **vectorización de una imagen en 2D** y posterior extrusión.  
+- Exportados a RobotStudio para convertirlos en trayectorias del ABB IRB140.
+
+---
+
 ## 🎥 Vídeo de simulación e implementación
 
 <div align="center">
