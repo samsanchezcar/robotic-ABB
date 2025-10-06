@@ -179,7 +179,7 @@ El diseño prioriza líneas suaves, transiciones redondeadas y un acabado profes
   [![GitHub samsanchezcar](https://img.shields.io/badge/GitHub-%40samsanchezcar-181717?style=for-the-badge&logo=github)](https://github.com/samsanchezcar)
 
 - **Santiago Ávila** — Colaboración en diseño y pruebas.  
-  [![GitHub Santiago Ávila](https://img.shields.io/badge/GitHub-Search--Santiago%20%C3%81vila-181717?style=for-the-badge&logo=github)](https://github.com/search?q=Santiago+Avila)
+  [![GitHub Santiago Ávila](https://img.shields.io/badge/GitHub-Search--Santiago%20%C3%81vila-181717?style=for-the-badge&logo=github)](https://github.com/Santiago-Avila)
 
 ---
 
