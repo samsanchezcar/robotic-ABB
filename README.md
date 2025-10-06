@@ -128,7 +128,7 @@ El objetivo es **automatizar el trazado de dibujos sobre piezas** transportadas 
 
 ## 🛠️ Diseño detallado de la herramienta — *Marker*
 
-![Marker Base Design](Design/Marker_Base_Plane.pdf)
+![Marker Base Design](Sources/MBD.png)
 
 **Descripción general:**  
 El *Marker* es un portamarcador desarrollado para ser robusto, recargable y de fácil mantenimiento. Se eligió un **marcador recargable** con cartucho reemplazable para **evitar mecanismos con resortes**, reduciendo puntos de fallo y simplificando el mantenimiento.
@@ -156,32 +156,24 @@ El diseño prioriza líneas suaves, transiciones redondeadas y un acabado profes
 - Recarga manual del cartucho; sin resortes ni partes móviles complejas.  
 - Componentes impresos fácilmente reemplazables.
 
+📂 **Archivos disponibles en [`Design/`](./Design/):**  
+Incluye planos en **PDF**, modelos en **Fusion 360 (`.f3d / .f3z`)**, exportaciones **SAT/STL**, y ensambles completos listos para impresión o modificación.
+
 ---
 
-## 🎥 Vídeo de simulación e implementación (embed + fallback)
+## 🎥 Vídeo de simulación e implementación
 
 <div align="center">
-  <!-- Embed (GitHub puede no renderizar iframes; por eso incluimos fallback) -->
-  <iframe width="900" height="506" src="https://www.youtube.com/embed/sByrkLONEk4" title="RobotStudio - robotic-ABB Cake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  <p>
-    <a href="https://youtu.be/sByrkLONEk4" target="_blank">
-      <img src="https://img.youtube.com/vi/sByrkLONEk4/hqdefault.jpg" alt="Ver vídeo en YouTube" style="max-width:100%;height:auto;" />
-    </a>
-  </p>
+[![Ver vídeo en YouTube](https://img.youtube.com/vi/sByrkLONEk4/hqdefault.jpg)](https://youtu.be/sByrkLONEk4 "RobotStudio - robotic-ABB Cake")
+
 </div>
 
----
-
-## 🧾 Autores
-
-- **Samuel David Sanchez Cardenas** — Desarrollo, simulación y documentación.  
-  [![GitHub samsanchezcar](https://img.shields.io/badge/GitHub-%40samsanchezcar-181717?style=for-the-badge&logo=github)](https://github.com/samsanchezcar)
-
-- **Santiago Ávila** — Colaboración en diseño y pruebas.  
-  [![GitHub Santiago Ávila](https://img.shields.io/badge/GitHub-%40Santiago-181717?style=for-the-badge&logo=github)](https://github.com/Santiago-Avila)
+> 🔗 Si el embed no se muestra correctamente en GitHub, haz clic en la miniatura para abrir el vídeo en YouTube.  
 
 ---
+
+
 
 ## 🖼 Previews (simulación / ejecución real / resultados)
 
@@ -194,6 +186,16 @@ El diseño prioriza líneas suaves, transiciones redondeadas y un acabado profes
 **Resultados sobre la pieza**  
 ![Resultados](Sources/Results.png)
 
+
+---
+
+## 🧾 Autores
+
+- **Samuel David Sanchez Cardenas** — Desarrollo, simulación y documentación.  
+  [![GitHub samsanchezcar](https://img.shields.io/badge/GitHub-%40samsanchezcar-181717?style=for-the-badge&logo=github)](https://github.com/samsanchezcar)
+
+- **Santiago Ávila** — Colaboración en diseño y pruebas.  
+  [![GitHub Santiago Ávila](https://img.shields.io/badge/GitHub-Search--Santiago%20%C3%81vila-181717?style=for-the-badge&logo=github)](https://github.com/search?q=Santiago+Avila)
 
 ---
 
