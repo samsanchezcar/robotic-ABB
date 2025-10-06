@@ -5,42 +5,65 @@ config:
 title: RAPID Robot Cake Decoration Routine
 ---
 flowchart TB
-  Start(["Start"]) ---> Init["Initialize outputs OFF"]
-  Init ---> Wait[/"Wait for user Input"/]
-  Wait ---> Decition{"¿Digital Input 1 ON?(DI_01==1)"}
-  Decition -- YES ---> Output1On["Set Digital Output 1"]
-  Output1On ---> PHome1["Go Home"]
-  PHome1 ---> ConvMove1["Set Conveyor Output(Conveyor_FWD)"]
-  ConvMove1 ---> Wait1["Wait 5.2 Seconds"]
-  Wait1 ---> ConvStop1["Reset Conyeyor Output(Conveyor_FWD)"]
-  ConvStop1 ---> PHome2["Go Home"]
-  PHome2 ---> LocalHome1
-  subgraph Draw["Decoration routine"]
-    LocalHome1["Go to local Home"]
-    DrawBat[["Execute Batman Path"]]
-    LocalHome2["Go to local Home"]
-    DrawNames[["Execute names Path"]]
-    LocalHome3["Go to local Home"]
-    PHomeFinal["Go Home"]
+  Start(["Start"]) --> Init["Initialize outputs OFF<br/>(DO_01=0, Conveyor OFF)"]
+  Init --> SetCake["Set Current_Wobj = Cake"]
+  SetCake --> PHome0["Go Home"]
+  PHome0 --> Wait[/"Wait for user Input"/]
+  Wait --> Decition{"¿Digital Input 1 ON?<br/>(DI_01==1)"}
+  
+  Decition -- YES --> SetCakeWobj["Set Current_Wobj = Cake"]
+  SetCakeWobj --> Output1On["Set Digital Output 1 (DO_01=1)"]
+  Output1On --> PHome1["Go Home"]
+  PHome1 --> ConvMove1["Set Conveyor Forward<br/>(Conveyor_FWD=1)"]
+  ConvMove1 --> Wait1["Wait 4.2 Seconds"]
+  Wait1 --> ConvStop1["Reset Conveyor Forward<br/>(Conveyor_FWD=0)"]
+  ConvStop1 --> Mark1[["Execute MARK Routine #1"]]
+  
+  subgraph Mark["MARK Subroutine"]
+    direction TB
+    MHome["Go Home"]
+    MLocalHome1["Go to Local Home"]
+    MDrawBat[["Execute Batman Path (P_Bat)"]]
+    MLocalHome2["Go to Local Home"]
+    MDrawNames[["Execute Names Path (P_Names)"]]
+    MLocalHome3["Go to Local Home"]
+    MPHomeFinal["Go Home"]
+    
+    MHome --> MLocalHome1
+    MLocalHome1 --> MDrawBat
+    MDrawBat --> MLocalHome2
+    MLocalHome2 --> MDrawNames
+    MDrawNames --> MLocalHome3
+    MLocalHome3 --> MPHomeFinal
   end
-  LocalHome1 ---> DrawBat
-  DrawBat ---> LocalHome2
-  LocalHome2 ---> DrawNames
-  DrawNames ---> LocalHome3
-  LocalHome3 ---> PHomeFinal
-  PHomeFinal ---> SafeWait["Wait 2 seconds"]
-  SafeWait ---> ConvMove2["Set Conveyor Output(Conveyor_FWD)"]
-  ConvMove2 ---> Wait2["Wait 3.5 Seconds"]
-  Wait2 ---> ConvStop2["Reset Conyeyor Output(Conveyor_FWD)"]
-  ConvStop2 ---> IndOff["Reset Digital Output 1"]
-  IndOff ---> PHomeEnd["Go Home"]
-  PHomeEnd ---> ConvInv["Set Inverse conveyor output (Conveyor_INV)"]
-  ConvInv ---> Wait3["Wait 5 seconds"]
-  Wait3 ---> ConvInvStop["Reset Inverse conveyor output (Conveyor_INV)"]
-  ConvInvStop ---> Wait
-  Decition -- NO ---> Decition2{"¿Digital Input 2 ON?(DI_02==1)"}
-  Decition2 -- YES ---> MoveHome["Go Home"]
-  Decition2 -- NO ---> Decition3{"¿Digital Input 3 ON?(DI_03==1)"}
-  Decition3 -- YES ---> MoveMaintenance["Go to maintenance position"]
-  MoveHome ---> Wait
-  MoveMaintenance ---> Wait
+  
+  Mark1 --> SafeWait["Wait 2 seconds"]
+  SafeWait --> ConvMove2["Set Conveyor Forward<br/>(Conveyor_FWD=1)"]
+  ConvMove2 --> Wait2["Wait 4.2 Seconds"]
+  Wait2 --> ConvStop2["Reset Conveyor Forward<br/>(Conveyor_FWD=0)"]
+  ConvStop2 --> Wait3["Wait 2 seconds"]
+  Wait3 --> IndOff["Reset Digital Output 1 (DO_01=0)"]
+  IndOff --> ConvInv["Set Inverse Conveyor<br/>(Conveyor_INV=1)"]
+  ConvInv --> Wait4["Wait 8.5 seconds"]
+  Wait4 --> ConvInvStop["Reset Inverse Conveyor<br/>(Conveyor_INV=0)"]
+  ConvInvStop --> SetCake2["Set Current_Wobj = Cake2<br/>(For Simulation)"]
+  SetCake2 --> Wait5["Wait 1 second"]
+  Wait5 --> Mark2[["Execute MARK Routine #2"]]
+  Mark2 --> Wait6["Wait 1 second"]
+  Wait6 --> Wait
+  
+  Decition -- NO --> Decition2{"¿Digital Input 2 ON?<br/>(DI_02==1)"}
+  Decition2 -- YES --> Output2On["Set Digital Output 2 (DO_02=1)"]
+  Output2On --> MoveHome["Go Home"]
+  MoveHome --> Wait7["Wait 1 second"]
+  Wait7 --> Output2Off["Reset Digital Output 2 (DO_02=0)"]
+  Output2Off --> Wait
+  
+  Decition2 -- NO --> Decition3{"¿Digital Input 3 ON?<br/>(DI_03==1)"}
+  Decition3 -- YES --> Output3On["Set Digital Output 3 (DO_03=1)"]
+  Output3On --> MoveMaintenance["Go to Maintenance Position"]
+  MoveMaintenance --> Wait8["Wait 1 second"]
+  Wait8 --> Output3Off["Reset Digital Output 3 (DO_03=0)"]
+  Output3Off --> Wait
+  
+  Decition3 -- NO --> Wait
