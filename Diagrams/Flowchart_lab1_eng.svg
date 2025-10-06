@@ -196,28 +196,28 @@
   <text x="1100" y="1050" class="text" font-weight="bold">NO</text>
   
   <!-- Decision 3: DI_03? -->
-  <path d="M 950,1250 L 1100,1400 L 950,1550 L 800,1400 Z" class="decision"/>
-  <text x="950" y="1395" class="text">Digital Input 3 ON?</text>
-  <text x="950" y="1415" class="text">(DI_03==1)</text>
+  <path d="M 950,1650 L 1100,1800 L 950,1950 L 800,1800 Z" class="decision"/>
+  <text x="950" y="1795" class="text">Digital Input 3 ON?</text>
+  <text x="950" y="1815" class="text">(DI_03==1)</text>
   
   <!-- YES path DI_03 -->
-  <text x="1000" y="1480" class="text" font-weight="bold">YES</text>
+  <text x="1000" y="1880" class="text" font-weight="bold">YES</text>
   
   <!-- Set DO_03 -->
-  <rect x="800" y="1580" width="300" height="40" rx="5" class="box"/>
-  <text x="950" y="1605" class="text">Set Digital Output 3 (DO_03=1)</text>
+  <rect x="800" y="1980" width="300" height="40" rx="5" class="box"/>
+  <text x="950" y="2005" class="text">Set Digital Output 3 (DO_03=1)</text>
   
   <!-- Go to Maintenance -->
-  <rect x="800" y="1650" width="300" height="40" rx="5" class="box"/>
-  <text x="950" y="1675" class="text">Go to Maintenance Position</text>
+  <rect x="800" y="2050" width="300" height="40" rx="5" class="box"/>
+  <text x="950" y="2075" class="text">Go to Maintenance Position</text>
   
   <!-- Wait 1s -->
-  <rect x="860" y="1720" width="180" height="40" rx="5" class="box"/>
-  <text x="950" y="1745" class="text">Wait 1 second</text>
+  <rect x="860" y="2120" width="180" height="40" rx="5" class="box"/>
+  <text x="950" y="2145" class="text">Wait 1 second</text>
   
   <!-- Reset DO_03 -->
-  <rect x="800" y="1790" width="300" height="40" rx="5" class="box"/>
-  <text x="950" y="1815" class="text">Reset Digital Output 3 (DO_03=0)</text>
+  <rect x="800" y="2190" width="300" height="40" rx="5" class="box"/>
+  <text x="950" y="2215" class="text">Reset Digital Output 3 (DO_03=0)</text>
   
   <!-- Arrows -->
   <!-- Start to Initialize -->
@@ -344,29 +344,29 @@
   
   <!-- Decision 2 NO to Decision 3 -->
   <line x1="1100" y1="1000" x2="1150" y2="1000" class="line"/>
-  <line x1="1150" y1="1000" x2="1150" y2="1400" class="line"/>
-  <line x1="1150" y1="1400" x2="1100" y2="1400" class="line" marker-end="url(#arrowhead)"/>
+  <line x1="1150" y1="1000" x2="1150" y2="1800" class="line"/>
+  <line x1="1150" y1="1800" x2="1100" y2="1800" class="line" marker-end="url(#arrowhead)"/>
   
   <!-- Decision 3 YES to Set DO_03 -->
-  <line x1="950" y1="1550" x2="950" y2="1580" class="line" marker-end="url(#arrowhead)"/>
+  <line x1="950" y1="1950" x2="950" y2="1980" class="line" marker-end="url(#arrowhead)"/>
   
   <!-- Set DO_03 to Maintenance -->
-  <line x1="950" y1="1620" x2="950" y2="1650" class="line" marker-end="url(#arrowhead)"/>
+  <line x1="950" y1="2020" x2="950" y2="2050" class="line" marker-end="url(#arrowhead)"/>
   
   <!-- Maintenance to Wait 1s -->
-  <line x1="950" y1="1690" x2="950" y2="1720" class="line" marker-end="url(#arrowhead)"/>
+  <line x1="950" y1="2090" x2="950" y2="2120" class="line" marker-end="url(#arrowhead)"/>
   
   <!-- Wait 1s to Reset DO_03 -->
-  <line x1="950" y1="1760" x2="950" y2="1790" class="line" marker-end="url(#arrowhead)"/>
+  <line x1="950" y1="2160" x2="950" y2="2190" class="line" marker-end="url(#arrowhead)"/>
   
   <!-- Reset DO_03 to loop back -->
-  <line x1="950" y1="1830" x2="950" y2="1900" class="line"/>
-  <line x1="950" y1="1900" x2="1150" y2="1900" class="line"/>
-  <line x1="1150" y1="1900" x2="1150" y2="410" class="line"/>
+  <line x1="950" y1="2230" x2="950" y2="2300" class="line"/>
+  <line x1="950" y1="2300" x2="1150" y2="2300" class="line"/>
+  <line x1="1150" y1="2300" x2="1150" y2="410" class="line"/>
   
   <!-- Decision 3 NO to loop back -->
-  <line x1="800" y1="1400" x2="750" y2="1400" class="line"/>
-  <line x1="750" y1="1400" x2="750" y2="2000" class="line"/>
-  <line x1="750" y1="2000" x2="1150" y2="2000" class="line"/>
-  <line x1="1150" y1="2000" x2="1150" y2="410" class="line"/>
+  <line x1="800" y1="1800" x2="750" y2="1800" class="line"/>
+  <line x1="750" y1="1800" x2="750" y2="2400" class="line"/>
+  <line x1="750" y1="2400" x2="1150" y2="2400" class="line"/>
+  <line x1="1150" y1="2400" x2="1150" y2="410" class="line"/>
 </svg>
