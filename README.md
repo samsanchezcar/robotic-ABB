@@ -124,6 +124,12 @@ El objetivo es **automatizar el trazado de dibujos sobre piezas** transportadas 
 - **Velocidad (`vXXX`) y zona (`zX`)**: seleccionar según operación — velocidades bajas y `z1` para trazos precisos; velocidades mayores para transiciones seguras.  
 - **Referencias (`Marker\WObj := Current_Wobj`)**: todas las trayectorias de marcado se referencian al `WorkObject` activo para permitir recalibraciones sin reprogramar.
 
+
+### Rapid Path
+```
+RS/robotic-ABB-Cake/Controller Data/IRB140_6_81/RAPID/TASK1/PROGMOD/Module1.mod
+```
+
 ---
 
 ## 🛠️ Diseño detallado de la herramienta — *Marker*
