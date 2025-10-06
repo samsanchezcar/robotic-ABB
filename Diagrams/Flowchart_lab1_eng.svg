@@ -16,7 +16,7 @@
   </defs>
   
   <!-- Background -->
-  <rect width="1200" height="4800" fill="#171719"/>
+  <rect width="1200" height="3200" fill="#171719"/>
   
   <!-- Title -->
   <text x="600" y="30" class="text" font-size="18" font-weight="bold">RAPID Robot Cake Decoration Routine</text>
